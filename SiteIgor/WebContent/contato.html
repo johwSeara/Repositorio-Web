@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Contato</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4169E1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #120A8F;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+function welcome(){
+  alert('Muito Obrigado Pelo Contato!');
+}
+</style>
+<script>
+function welcome(){
+	  alert('Muito Obrigado Pelo Contato!');
+	}
+</script>
+</head>
+<body>
+
+<h2 style="text-align: center">Contato</h2>
+
+<div class="container">
+  
+  <div class="row">
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Nome:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Seu Nome..">
+        <label for="lname">Sobrenome</label>
+        <input type="text" id="lname" name="lastname" placeholder="Seu ultimo nome..">
+        <label for="country">País</label>
+        <select id="country" name="country">
+          <option value="brasil">Brasil</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Sugestão</label>
+        <textarea id="subject" name="subject" placeholder="Escreva alguma coisa.." style="height:170px"></textarea>
+      </form>
+    <input onclick="welcome();window.location.href = 'index.html';" type="submit" value="Enviar"/>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
