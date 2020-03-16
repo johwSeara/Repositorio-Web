@@ -7,6 +7,6 @@
 <title>Fluzao da Massa</title>
 </head>
 <body>
-	<h1>Nenê é o nosso Rei!</h1>
+	<h1>Ganso é melhor do que o Neymar</h1>
 </body>
 </html>
